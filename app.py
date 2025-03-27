@@ -10,7 +10,7 @@ def generate_large_file():
     num_per_chunk = chunk_size  # هر کاراکتر یک بایت است
     
     # جنریت حروف تصادفی بزرگ
-    for _ in range(50):  # به طور کلی 100 مگابایت داده تولید می‌شود
+    for _ in range(100):  # به طور کلی 100 مگابایت داده تولید می‌شود
         letters = ''.join(random.choices(string.ascii_letters, k=num_per_chunk))
         yield letters
 
